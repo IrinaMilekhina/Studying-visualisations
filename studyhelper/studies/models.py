@@ -27,8 +27,14 @@ class Activity(models.Model):
     name = models.CharField(max_length=200)
     number_of_lessons = models.IntegerField()
 
+    def __str__(self):
+        return self.name
+
 
 class Logs(models.Model):
     activity = models.ForeignKey(Activity, on_delete=models.CASCADE)
     date = models.DateField(auto_now=False, auto_now_add=True)
     quantity = models.IntegerField()
+
+    def __str__(self):
+        return self.date
