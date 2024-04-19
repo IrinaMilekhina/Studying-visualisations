@@ -3,3 +3,4 @@ venv/
 __pycache__/
 notes.txt
 *.sqlite3
+.env
