@@ -4,3 +4,4 @@ __pycache__/
 notes.txt
 *.sqlite3
 .env
+static/
