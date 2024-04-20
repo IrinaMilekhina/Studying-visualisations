@@ -25,7 +25,7 @@ class Activity(models.Model):
         default=Types.CONSTANT,
     )
     name = models.CharField(max_length=200)
-    number_of_lessons = models.IntegerField()
+    number_of_lessons = models.PositiveSmallIntegerField(default=None, blank=True, null=True)
 
     def __str__(self):
         return self.name
